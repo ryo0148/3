@@ -63,12 +63,16 @@
             labelContainer.childNodes[0].innerHTML = "カギがしまってます"
             var audio = new Audio('se_pikon23.mp3');
             audio.play()
+            Thread.sleep(1000)
+
             break;
 
         }else if(prediction[1].probability.toFixed(2) > 0.6){
                 labelContainer.childNodes[1].innerHTML = "カギが空いています"
                 var audio = new Audio('se_bukimi2.mp3');
                 audio.play()
+                Thread.sleep(1000)
+
                 break;
         }
             //for (let i = 0; i < maxPredictions; i++) {
